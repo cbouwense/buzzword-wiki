@@ -2,18 +2,84 @@
   <head>
     <title>Buzzword Wiki</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-..." crossorigin="anonymous">
+    <style>
+      header {
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 1rem;
+        text-align: center;
+      }
+      main {
+        padding: 1rem;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 2rem;
+        width: 100%;
+      }
+      li:nth-child(odd) {
+        background-color: #eee;
+      }
+
+      li span {
+        display: flex;
+        width: 100%;
+      }
+
+      .corporate {
+        justify-content: flex-end;
+      }
+
+      .normal {
+        justify-content: flex-start;
+      }
+
+    </style>
   </head>
   <body>
     <header>Translations from corporate-speak to plain English.</header>
     <main>
       <ul>
-        <li>let's put a pin in this = let's stop for now</li>
-        <li>circle back = revisit</li>
-        <li>good callout = nice observation</li>
-        <li>yeah, but that's a good callout = shut the fuck up</li>
-        <li>let's take this offline = stop contradicting me in front of everyone</li>
-        <li>move the needle = people need to do their jobs</li>
-        <li>let's not boil the ocean = let's choose what is easy over what is right</li>
+        <li>
+          <span class="corporate"><strong>when you hear:</strong></span>
+          <span class="normal"><strong>what they mean is:</strong></span>
+        </li>
+        <li>
+          <span class="corporate">let's put a pin in this</span>
+          <span class="normal">let's stop for now</span>
+        </li>
+        <li>
+          <span class="corporate">circle back</span>
+          <span class="normal">revisit</span>
+        </li>
+        <li>
+          <span class="corporate">good callout</span>
+          <span class="normal">nice observation</span>
+        </li>
+        <li>
+          <span class="corporate">yeah, no, yeah but that's a good callout</span>
+          <span class="normal">shut the fuck up</span>
+        </li>
+        <li>
+          <span class="corporate">let's take this offline</span>
+          <span class="normal">stop contradicting me in front of everyone</span>
+        </li>
+        <li>
+          <span class="corporate">move the needle</span>
+          <span class="normal">people need to do their jobs</span>
+        </li>
+        <li>
+          <span class="corporate">let's not boil the ocean</span>
+          <span class="normal">let's choose what is easy over what is right</span>
+        </li>
       </ul>
     </main>
   </body>
